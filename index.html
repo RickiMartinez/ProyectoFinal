@@ -1,0 +1,425 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&display=swap" rel="stylesheet">
+    <!-- icons: font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <title>Funko Paradice | Encontra los mejores Funkos del mercado</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <!-- adding burger menu -->
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <h2 class="logo">Funko Paradice</h2>
+        <div class="menu-list">
+            <a href="#home">Inicio</a>
+            <a href="#product">Productos</a>
+            <a href="#collection">Nuevos Ingresos</a>
+            <a href="#somos">Nosotros</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <div class="menu-right">
+            <div class="search">
+                <button class="btn btn-menu">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="cart">
+                <button class="btn btn-menu">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <!-- adding cart list -->
+                <div class="cart-content">
+                    <a href="#">
+                        <div class="cart-detail">
+                            <img class="cart-image" src="images/collection-1.png">
+                            <div class="cart-text">
+                                <h4>Black Phanter</h4>
+                                <p>1 items</p>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cart-detail">
+                            <img class="cart-image" src="images/collection-2.png">
+                            <div class="cart-text">
+                                <h4>Okoye</h4>
+                                <p>1 items</p>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="cart-detail">
+                            <img class="cart-image" src="images/collection-3.png">
+                            <div class="cart-text">
+                                <h4>King Namor</h4>
+                                <p>1 items</p>
+                            </div>
+                            <h4>$75</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header id="home">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/portada.png">
+                    <div class="swiper-desc">
+                        <h1>Discover Your <br> Own Style</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni aut odio optio fuga veniam.
+                        </p>
+                        <button class="swiper-btn">Check Now</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/portada2.png">
+                    <div class="swiper-desc desc2">
+                        <h1>Shopping The Way <br>You Like It</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum quia, ratione tempora dolor.
+                        </p>
+                        <button class="swiper-btn">Check Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+    <!-- product -->
+    <section class="product" id="product">
+        <h1 class="heading-title">Productos</h1>
+        <!-- filter button -->
+        <div class="filter-group" id="filter">
+            <button class="product-filter is-checked" data-filter="*">Todos los Productos</button>
+            <button class="product-filter" data-filter=".new">Nuevos Ingresos</button>
+            <button class="product-filter" data-filter=".best">Mas Vendidos</button>
+            <button class="product-filter" data-filter=".promo">Promo</button>
+        </div>
+        <!-- product list -->
+        <div class="product-wrapper">
+            <div class="product-card new">
+                <div class="product-label label-red">Nuevo</div>
+                <img class="product-image" src="images/collection-1.png">
+                <div class="product-detail">
+                    <h4>One Set Workout <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card best">
+                <div class="product-label label-yellow">Mas Vendido</div>
+                <img class="product-image" src="images/goku-1.png">
+                <div class="product-detail">
+                    <h4>Black Blazer & Skirt <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card best">
+                <div class="product-label label-yellow">Mas Vendido</div>
+                <img class="product-image" src="images/kakashi-1.png">
+                <div class="product-detail">
+                    <h4>Pink Strip Dress<i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card promo">
+                <div class="product-label label-blue">Promo</div>
+                <img class="product-image" src="images/boruto-1.png">
+                <div class="product-detail">
+                    <h4>Flowe Dress <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card new">
+                <div class="product-label label-red">Nuevo</div>
+                <img class="product-image" src="images/nuevo6.png">
+                <div class="product-detail">
+                    <h4>Knit Wear Yellow <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card best">
+                <div class="product-label label-yellow">Mas Vendido</div>
+                <img class="product-image" src="images/pokemon-3.png">
+                <div class="product-detail">
+                    <h4>Pinky Blazer <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card new">
+                <div class="product-label label-red">Nuevo</div>
+                <img class="product-image" src="images/collection-3.png">
+                <div class="product-detail">
+                    <h4>White T-shirt <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card best">
+                <div class="product-label label-yellow">Mas Vendido</div>
+                <img class="product-image" src="images/naruto-1.png">
+                <div class="product-detail">
+                    <h4>Pinky Blazer <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card new">
+                <div class="product-label label-red">Nuevo</div>
+                <img class="product-image" src="images/collection-2.png">
+                <div class="product-detail">
+                    <h4>Knit Wear Yellow <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+
+
+            <div class="product-card best">
+                <div class="product-label label-yellow">Mas Vendido</div>
+                <img class="product-image" src="images/cuarto-1.png">
+                <div class="product-detail">
+                    <h4>Amazing Brown Glassess <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card new">
+                <div class="product-label label-red">Nuevo</div>
+                <img class="product-image" src="images/collection-4.png">
+                <div class="product-detail">
+                    <h4>Knit Wear Yellow <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+
+            <div class="product-card promo">
+                <div class="product-label label-blue">Promo</div>
+                <img class="product-image" src="images/especial-1.png">
+                <div class="product-detail">
+                    <h4>Flowe Dress <i class="far fa-heart"></i> </h4>
+                    <span> $ 30.99</span>
+                </div>
+                <button class="product-button">Add to cart</button>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- offer -->
+    <section class="offers" id="collection">
+        <div class="offers-wrapper">
+            <h2>Oferta de Lanzamiento</h2>
+            <h2>Hasta 25% de descuento en todos los productos</h2>
+            <button class="offers-button">Comprar</button>
+        </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="collection">
+        <h1 class="heading-title">Nuevos Ingresos</h1>
+        <div class="collection-wrapper">
+            <!-- left side -->
+            <div class="collection-left">
+                <div class="collection-card">
+                    <img src="images/collection-1.png">
+                    <div class="collection-detail">
+                        <h2>Black Phanter</h2>
+                        <span><i class="fas fa-long-arrow-alt-right"></i> Comprar</span>
+                    </div>
+                </div>
+            </div>
+            <!-- right side -->
+            <div class="collection-right">
+                <div class="collection-card2">
+                    <img src="images/collection-2.png">
+                    <div class="collection-detail">
+                        <h2>Okoye</h2>
+                        <span><i class="fas fa-long-arrow-alt-right"></i> Comprar</span>
+                    </div>
+                </div>
+                <div class="collection-card3">
+                    <img src="images/collection-3.png">
+                    <div class="collection-detail">
+                        <h2>King Namor</h2>
+                        <span><i class="fas fa-long-arrow-alt-right"></i> Comprar</span>
+                    </div>
+                </div>
+                <div class="collection-card4">
+                    <img src="images/collection-4.png">
+                    <div class="collection-detail">
+                        <h2>Attuma</h2>
+                        <span><i class="fas fa-long-arrow-alt-right"></i> Comprar</span>
+                    </div>
+                </div>
+                <div class="collection-card5">
+                    <img src="images/collection-5.png">
+                    <div class="collection-detail">
+                        <h2>IronHeart MK1</h2>
+                        <span><i class="fas fa-long-arrow-alt-right"></i> Comprar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="somos">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+
+                <h2>Somos <span class="color-acento">Funko Paradice</span>
+                </h2>
+                <br>
+                <p>Una empresa dedicada al comercio de esta fiebre del coleccionismo son los Funko Pop! La
+                    concurrida sociedad de muñecos con gran cabeza y bordes redondeados de origen estadounidense, que a
+                    falta de boca tienen enormes ojos negros que te miran fijo pidiendo permiso de adopción inmediata.
+                </p>
+                <br>
+                <br>
+                <h3>Pero <span class="color-acento">Que es un Funko Pop!?</span>
+                </h3>
+                <br>
+                <p>Los funko pop son figuras con un diseño peculiar. Basados en el concepto japonés chibi de estilo
+                    aniñado, tienen cuerpos reducidos y cabezas grandes en comparación con el cuerpo. Muñecos cabezones
+                    que representan personajes de cómics, de Disney, series de TV, películas o incluso personas reales.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Garantia -->
+    <section class="guarantee">
+        <div class="guarantee-wrapper">
+            <div class="guarantee-card">
+                <i class="fas fa-truck guarantee-icon"></i>
+                <div class="guarantee-text">
+                    <h3>Envio Gratis</h3>
+                    <p>Envío gratis a todo el pais con la compra de 2 Funkos. ¿Que estas esperando?</p>
+                </div>
+            </div>
+            <div class="guarantee-card">
+                <i class="fas fa-truck-loading guarantee-icon"></i>
+                <div class="guarantee-text">
+                    <h3>Devolucion de 30 dias</h3>
+                    <p>Si no te gusta el producto, tienes 30 días para devolverlo.</p>
+                </div>
+            </div>
+            <div class="guarantee-card">
+                <i class="fas fa-money-bill-wave guarantee-icon"></i>
+                <div class="guarantee-text">
+                    <h3>Reembolso del 100% del dinero</h3>
+                    <p>Nos comprometimos a vender productos originales, le reembolsaremos su dinero si los productos son falsos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Novedades -->
+    <section class="newsletter" id="contact">
+        <h1 class="heading-title">Novedades</h1>
+        <p>Suscribite para mantenerte informado sobre los ultimos ingresos y promociones</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Tu direccion de Email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-card">
+                <h3>Funko Paradice</h3>
+			<h5>Ubicacion</h5>
+			<h5>Calle Falsa 123</h5>
+			<h5>Telefono</h5>
+			<h5>11-1111-1111</h5>
+			<h5>Buenos Aires - Argentina</h5>
+                <div class="download-apps">
+                    <img src="images/play-store.svg">
+                    <img src="images/app-store.svg">
+                </div>
+            </div>
+            <div class="footer-card">
+                <h4>Explora</h4>
+                <a href="#home">Inicio</a>
+            <a href="#product">Productos</a>
+            <a href="#collection">Nuevos Ingresos</a>
+            <a href="#somos">Nosotros</a>
+            <a href="#Contact">Contacto</a>
+            </div>
+            <div class="footer-card">
+                <h4>Nuestro Servicios</h4>
+                <a href="#">Envios Gratis</a>
+                <a href="#">Garantia de los Productos</a>
+                <a href="#">Gift Card</a>
+                <a href="#">Precios</a>
+                <a href="#">Reembolso</a>
+                <a href="#">Metodos De Pagos</a>
+            </div>
+            
+            <div class="footer-card">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-facebook-f social-media"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter social-media"></i> Twitter</a>
+                <a href="#"><i class="fab fa-youtube social-media"></i> Youtube</a>
+                <a href="#"><i class="fab fa-instagram social-media"></i> Instagram</a>
+            </div>
+        </div>
+        <hr class="divider">
+        <p class="copyright">Copyright © 2022 All rights reserved Funko Paradice</p>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
