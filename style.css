@@ -111,8 +111,8 @@ header {
 
 .swiper-desc {
     position: absolute;
-    top: 15%;
-    left: 5%;
+    top: 35%;
+    left: 10%;
     width: 30%;
     text-align: left;
 }
@@ -136,7 +136,7 @@ header {
 }
 
 .desc2 {
-    color:var(--whiteColor);
+    color:var(--fontColor);
 }
 
 .guarantee {
@@ -724,15 +724,24 @@ footer {
 
     .swiper-desc {
         width: 50%;
+        top: 15%;
+        background-color: #f5f5f5;
+        border-radius: 15px;
     }
     
     .swiper-desc h1 {
         line-height: 1.5;
         font-size: 28px;
+        margin: 10px;
     }
 
     .swiper-desc p {
         font-size: 12px;
+        margin: 10px;
+    }
+
+    .swiper-btn {
+        margin: 10px;
     }
 
     .product-card {
