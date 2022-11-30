@@ -334,10 +334,13 @@ header {
     cursor: pointer;
 }
 
-.product-filter:active,
+
 .product-filter.is-checked {
-    background: var(--primaryColor);
-    color: var(--whiteColor);
+    color: var(--fontColor);
+}
+
+.product-filter:active {
+    background-color: var(--primaryColor);
 }
 
 .product-wrapper {
@@ -731,7 +734,7 @@ footer {
     
     .swiper-desc h1 {
         line-height: 1.5;
-        font-size: 28px;
+        font-size: 22px;
         margin: 10px;
     }
 
