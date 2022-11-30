@@ -171,7 +171,9 @@ header {
 
 .collection h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
 .collection {
@@ -185,6 +187,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     gap: 1rem;
     width:100%;
+    padding: 20px;
 }
 
 .collection-left {
@@ -316,7 +319,9 @@ header {
 }
 
 .product h1 {
-    font-size: 50px;
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
 }
 
 .product {
