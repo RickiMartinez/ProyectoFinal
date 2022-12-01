@@ -1,0 +1,35 @@
+
+:root {
+    --primaryColor: #c11b1b;
+    --yellowColor: #ffbd5c;
+    --fontColor : #111;
+    --spanColor : #c0c0c0;
+    --greyColor : #f5f5f5;
+    --whiteColor : #ffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+h1 {
+    line-height: 2;
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h2 {
+    line-height: 1.5;
+}

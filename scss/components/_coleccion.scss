@@ -1,0 +1,149 @@
+
+.collection h1 {
+    text-align: center;
+    font-size: 40px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.collection {
+    width: 100%;
+    padding: 4% 2% 2% 2%;
+    scroll-margin-top: 3rem;
+}
+
+.collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+    width:100%;
+    padding: 20px;
+}
+
+.collection-left {
+    width: 100%;
+}
+
+.collection-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.collection-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.collection-card2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.collection-card3 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    grid-area: 1 / 2 / 2 / 3;
+}
+.collection-card4 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    grid-area: 2 / 1 / 3 / 2;
+}
+.collection-card5 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.collection-card > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.collection-card2 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.collection-card3 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.collection-card4 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.collection-card5 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.collection-detail {
+    position: absolute;
+    left: 20;
+    bottom: 50;
+    line-height: 1;
+    color: var(--whiteColor);
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.collection-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.collection-card2:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.collection-card3:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.collection-card4:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.collection-card5:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.collection-card:hover .collection-detail {
+    bottom: 80;
+}
+.collection-card2:hover .collection-detail {
+    bottom: 80;
+}
+.collection-card3:hover .collection-detail {
+    bottom: 80;
+}
+.collection-card4:hover .collection-detail {
+    bottom: 80;
+}
+.collection-card5:hover .collection-detail {
+    bottom: 80;
+}
+
+.collection-detail > span {
+    color: var(--whiteColor);
+}
