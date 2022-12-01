@@ -275,7 +275,7 @@ header {
 .offers {
   width: 100%;
   height: 620px;
-  background-image: url("../../images/portada5.png");
+  background-image: url("../images/portada5.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -674,33 +674,6 @@ footer {
 }
 
 /* ========Mobile Display =======*/
-@media (min-width: 680px) {
-  #somos .container {
-    display: flex;
-    justify-content: space-evenly;
-  }
-  #somos .texto {
-    width: 50%;
-    max-width: 600px;
-    text-align: initial;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #somos h2 {
-    font-family: "Abril Fatface", cursive;
-    margin-top: 0;
-  }
-  #somos .img-container {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.123)), url("../../images/thor.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 500px;
-    width: 470px;
-    border-radius: 30px;
-  }
-}
 @media screen and (max-width: 680px) {
   .menu-toggle,
 .bar {
@@ -755,6 +728,34 @@ footer {
   }
   .product-card {
     width: 90%;
+  }
+}
+/* ========Mobile Display =======*/
+@media (min-width: 680px) {
+  #somos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #somos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos h2 {
+    font-family: "Abril Fatface", cursive;
+    margin-top: 0;
+  }
+  #somos .img-container {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.123)), url("../images/thor.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 470px;
+    border-radius: 30px;
   }
 }
 
