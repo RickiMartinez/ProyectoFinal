@@ -45,20 +45,76 @@ filtersElem.addEventListener("click", function(event){
     iso.arrange ({filter: filterValue});
 });
 
-// change is-checked class on buttons
-const buttonGroups = document.querySelectorAll(".filter-group");
-for (var i = 0, len = buttonGroups.length; i <len ; i++){
-    var buttonGroup = buttonGroups[i];
-    radioButtonGroup(buttonGroup);
-}
 
-function radioButtonGroup(buttonGroup) {
-    buttonGroups.addEventListener("click", function(event){
-        if (!matchesSelector(event.target, "button")){
-            return;
+
+//===================================================//
+
+const cartInfo = document.querySelector(".cart")
+const cartContent = document.querySelector(".cart-content")
+
+//Lista de todos los contenedores de productos//
+
+const productsList = document.querySelector(".product-wrapper")
+
+
+// Variable de arreglos de Productos
+
+let allProducts = []
+
+productsList.addEventListener("click", e => {
+
+    if(e.target.classList.contains("product-button")){
+        const product = e.target.parentElement
+        const infoProduct = {
+            quantity: 1,
+            title: product.querySelector("h4").textContent,
+            price: product.querySelector("span").textContent,
         }
-        buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
-        event.target.classList.add("is-checked");
-    });
-};
 
+        const exits = allProducts.some(product => product.title === infoProduct.title)
+
+        if(exits){
+            const products = allProducts.map(product => {
+                if(product.title === infoProduct.title){
+                    product.quantity++;
+                    return product;
+                } else {
+                    return product;
+                }
+            });
+            allProducts = [...product];
+        } else {
+        allProducts = [...allProducts, infoProduct];
+    }
+
+        showHTML();
+    }
+
+    
+})
+
+// Funcion para mostrar HTML
+const showHTML = () => {
+
+    //Limpiar HTML//
+    cartContent.innerHTML = ""
+
+    allProducts.forEach(product => {
+        const containerProduct = document.createElement("div")
+        containerProduct.classList.add ("cart-content")
+
+        containerProduct.innerHTML = `
+                            <div class="cart-detail">
+                            <img class="cart-image" src="images/collection-1.webp">
+                            <div class="cart-text">
+                            <<h4 class="titulo">${product.title}</h4>
+                            <p class="cantidad">${product.quantity}</p>
+                            </div>
+                            <h4 class="precio">${product.price}</h4>
+                            </div>
+        `
+
+        cartContent.append(containerProduct)
+
+    })
+}
